@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHALLANGE</title>
+    <style>
+    
+
+      .navbar {
+  background: white;
+  padding-right: 150px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: right;
+  box-shadow: 0px 10px rgb(226, 226, 226);
+}
+
+
+      div {
+        background-color: white;
+        height: 35px;
+      }
+
+      body {
+        background-color: rgb(255, 255, 255);
+        
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+
+      img {
+        border-radius: 100%;
+        width: 150px;
+        margin-left: 25px;
+        margin-top: 15px;
+        float: left;
+        margin-right: 20px;
+      }
+
+      #box-profile {
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  margin-left: 4%;
+  margin-top: 30px;
+  width: 92%;
+  float: left;
+  height: 300px;
+  padding-bottom: 10px;
+}
+
+      .form {
+        background-color: rgb(255, 255, 255);
+        height: 401px;
+        margin-left: 45px;
+        margin-right: 50px;
+      }
+
+      .submit {
+        width: 100%;
+        background-color: green;
+        border: none;
+        height :25px;
+        color: white;
+      }
+
+      input {
+        border: 1px solid rgb(192, 190, 190);
+      }
+
+      .bagian-foto {
+  border-radius: 50%;
+  width: 18%;
+  height: 85%;
+  background-image: url(../images/profile.jpg);
+  background-size: cover;
+  margin: 30px;
+  float: left;
+}
+
+.info-profile {
+  width: 30%;
+  float: left;
+  padding-top: 20px;
+}
+
+.info-lanjutan {
+  width: 15%;
+  float: left;
+  padding-top: 30px;
+}
+
+.info-lanjutan-isi {
+  width: 15%;
+  float: left;
+  padding-top: 30px;
+}
+
+      .parent {
+        background-color: rgb(241, 241, 241);
+        height: 820px;
+        margin-left: 80px;
+        margin-right: 80px;
+      }
+      .link {
+  margin-right: 15px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="link" href="/">HOME</a>
+      <a class="link" href="">PRODUCT</a>
+      <a class="link" href="">GALLERY</a>
+      <a class="link" href="">BLOG</a>
+      <a class="link" href="">INVENTORY</a>
+    </div>
+    
+<br>
+    <div class="parent">
+      <br /><br />
+
+      <div id="box-profile">
+        <!-- ini bagian foto -->
+        <div class="bagian-foto"></div>
+        <!-- ini bagian info -->
+        <div class="info-profile">
+          <h1 id="namaprofile">Your Name</h1>
+          <p>Front End Developper</p>
+          <br />
+          <br />
+          <form action="">
+          <button style="background-color: blue; border: none; width: 80px ;height: 40px; color: white;">Kontak</button>
+          <button style="background-color: rgb(247, 247, 248); border: 1px solid green; width: 80px ;height: 40px; color: green;">Resume</button>
+        </form>
+        </div>
+        <!-- info lanjutan -->
+        <div class="info-lanjutan">
+          <p><b>Availability</b></p>
+          <p><b>Usia</b></p>
+          <p><b>Lokasi</b></p>
+          <p><b>Pengalaman</b></p>
+          <p><b>Email</b></p>
+        </div>
+        <!-- info lanjutan 2 -->
+        <div class="info-lanjutan-isi">
+          <p id="infoavaibility">Full Time</p>
+          <p id="infousia">26</p>
+          <p id="infolokasi">Indonesia</p>
+          <p id="infoexperience">3 Tahun</p>
+          <p id="infoemail">aritno12@gmail.com</p>
+        </div>
+      </div>
+  
+      <br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /> <br /><br /><br /><br /><br /> <br /><br /><br /><br /><br />
+      
+      <form >
+      <div class="form">
+       
+        <label for=""><b>Nama</b></label>
+        <br />
+        <input id="nama" value="" type="text" placeholder="" style="width: 100%;" />
+        <br /><br />
+
+        <label for=""><b>Avaibility</b></label>
+        <br />
+        <input  id="waktu" type="text" name="availibility" placeholder="" style="width: 100%;" />
+        <br /><br />
+
+        <label for=""><b>Usia</b></label>
+        <br />
+        <input id="usia" type="text" name="age" placeholder="" style="width: 100%;" />
+        <br /><br />
+
+        <label for=""><b>Lokasi</b></label>
+        <br />
+        <input id="lokasi" type="text" name="lokasi" placeholder=""style="width: 100%;" />
+        <br /><br />
+
+        <label for=""><b>Experience</b></label>
+        <br />
+        <input id="experience" type="number" name="year_experience" placeholder="" style="width: 100%;" />
+        <br /><br />
+
+        <label for=""><b>Email</b></label>
+        <br />
+        <input id="email" type="text" name="email" placeholder="" style="width: 100%;" />
+        <br /><br />
+
+       
+        <input type="button" value="SUBMIT" onclick="onSubmit()" style="width: 100%; background-color: green; color: white; border: ;" >
+      </div>
+    </div>
+</form>
+<img src="../images/hactiv8.png" alt="" style="float: right;" height="60px">
+
+<script>
+
+  // GET VALUE FROM H1
+  var infoNama = document.getElementById("namaprofile").innerHTML;
+  console.log(infoNama);
+
+        //  SET DEFAULT VALUE INPUT NAMA     
+          document.getElementById("nama").value = infoNama;
+
+
+
+       
+  // get value avaibility
+  var infoavaibility = document.getElementById("infoavaibility").innerText;
+  console.log(infoavaibility);
+
+        // set default value input nama
+          document.getElementById("waktu").value = infoavaibility;
+
+
+
+  //get value usia
+  var infousia = document.getElementById("infousia").innerText;
+  console.log(infousia);
+
+        //set default value input usia 
+        document.getElementById("usia").value = infousia;
+
+
+  //get value lokasi
+  var infolokasi = document.getElementById("infolokasi").innerText;
+  console.log(infolokasi);
+          
+        //set default value input lokasi
+        document.getElementById("lokasi").value = infolokasi;
+
+
+  //get value experience
+  var infoexperience = document.getElementById("infoexperience").innerText;
+   console.log(infoexperience);
+
+var hasilReplace = infoexperience.replace(/\D/g,'');
+console.log(hasilReplace); 
+
+        //set default value input experience
+        document.getElementById("experience").value = hasilReplace;
+
+  //get value email
+  var infoemail = document.getElementById("infoemail").innerText;
+  console.log(infoemail);
+
+        //set default value input email
+        document.getElementById("email").value = infoemail;
+
+  //           function submitdata()
+  // {
+
+  //   var nama = document.getElementById("nama").value;
+  //   console.log(nama);
+  //   document.getElementById("nama").innerHTML=nama;
+  //   var usia = document.getElementById("usia").value;
+  //   console.log(usia);
+  //   document.getElementById("usia").innerHTML=usia;
+  //   alert(nama + usia);
+  // }
+
+</script>
+
+  <script>
+     function onSubmit(){
+    var hasilNama = document.getElementById("nama").value;
+    var hasilWaktu = document.getElementById("waktu").value;
+    var hasilUsia = document.getElementById("usia").value;
+    var hasilLokasi = document.getElementById("lokasi").value;
+    var hasilExperience = document.getElementById("experience").value;
+    var hasilEmail = document.getElementById("email").value;
+    console.log(hasilNama);
+
+    document.getElementById('namaprofile').innerHTML = hasilNama;
+    document.getElementById('infoavaibility').innerText = hasilWaktu;
+    document.getElementById('infousia').innerText = hasilUsia;
+    document.getElementById('infolokasi').innerText = hasilLokasi;
+    document.getElementById('infoexperience').innerText = hasilExperience +" tahun";
+    document.getElementById('infoemail').innerText = hasilEmail;
+  
+}
+  </script>
+
+</body>
+
+
+</html>
